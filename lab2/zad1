@@ -1,0 +1,242 @@
+a)
+package com.company;
+
+import java.util.Scanner;
+
+class zad1 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        float suma=0;
+        while (a != number) {
+            suma = suma + scanner.nextFloat();
+            a++;
+
+        }
+        System.out.println(suma);
+    }
+
+}
+
+b)
+package com.company;
+
+import java.util.Scanner;
+
+class zad2 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        float iloczyn=1;
+        while (a != number) {
+            iloczyn = iloczyn * scanner.nextFloat();
+            a++;
+
+        }
+        System.out.println(iloczyn);
+    }
+
+}
+
+c)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad3 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        float b=0;
+        while (a != number) {
+            b = b + java.lang.Math.abs(scanner.nextFloat());
+            a++;
+
+        }
+        System.out.println(b);
+    }
+
+}
+
+
+d)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad4 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=0;
+        while (a != number) {
+            b = b + java.lang.Math.sqrt(java.lang.Math.abs(scanner.nextFloat()));
+            a++;
+
+        }
+        System.out.println(b);
+    }
+
+}
+
+
+e)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad5 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=1;
+        while (a != number) {
+            b = b * java.lang.Math.sqrt(scanner.nextFloat());
+            a++;
+
+        }
+        System.out.println(b);
+    }
+
+}
+
+
+f)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad6 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=0;
+        while (a != number) {
+            b = b + java.lang.Math.pow(scanner.nextFloat(),2);
+            a++;
+
+        }
+        System.out.println(b);
+    }
+
+}
+
+g)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad7 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=0;
+        double c=1;
+        while (a != number) {
+            double d = scanner.nextFloat();
+            b = b + d;
+            c = c * d;
+            a++;
+
+        }
+        System.out.println("Dodawanie: "+ b);
+        System.out.println("Mnożenie: "+ c);
+    }
+
+}
+
+
+h)
+
+ackage com.company;
+
+import java.util.Scanner;
+
+class zad8 {
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=0;
+        while (a != number) {
+            a++;
+            double c = scanner.nextFloat();
+            if(a==number){
+                b = b + java.lang.Math.pow((-1),number+1)*c;
+                break;
+            }
+            if(a%2==0){
+                b = b - c;
+            }
+            else{b = b + c;}
+            //System.out.println("Dodawanie: "+ b);
+
+        }
+        System.out.println("Dodawanie: "+ b);
+
+    }
+
+}
+
+i)
+
+package com.company;
+
+import java.util.Scanner;
+
+class zad9 {
+    public static int silnia (int n) {
+        int iloczyn = 1;
+        for (int i=1; i<=n; i++) {
+            iloczyn *= i;
+        }
+        return iloczyn;
+    }
+
+    public static void main(String[] args) {
+        int a = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double b=0;
+        while (a != number) {
+            a++;
+            double c = scanner.nextFloat();
+            if(a==number){
+                b = b + (java.lang.Math.pow((-1),number)*c)/(silnia(number));
+                break;
+            }
+            if(a%2==0){
+                b = b + c/silnia(a);
+            }
+            else{
+                b = b - c/silnia(a);
+            }
+            System.out.println("Dodawanie: "+ b);
+
+        }
+        System.out.println("Dodawanie: "+ b);
+
+    }
+
+}
