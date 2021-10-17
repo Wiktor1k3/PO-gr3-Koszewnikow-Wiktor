@@ -1,0 +1,335 @@
+-------------(Zad2.1)---------------
+
+-------------(a)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+    public static void main(String[] args) {
+        int a = 0;
+        int c = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number){
+            double b = scanner.nextDouble();
+            if(b%2!=0){
+                c++;
+            }
+            a++;
+        }
+        System.out.println("Liczb nieparzystych: "+ c);
+    }
+}
+
+-------------(b)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+    public static void main(String[] args) {
+        int a = 0;
+        int c = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number){
+            double b = scanner.nextDouble();
+            if(b%3==0){
+                if(b%5!=0) {
+                    c++;
+                }
+            }
+            a++;
+        }
+        System.out.println("Podzielne przez 3 i niepodzielne przez 5: "+ c);
+    }
+}
+
+-------------(c)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+    public static void main(String[] args) {
+        int a = 0;
+        int c = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number){
+            double b = scanner.nextDouble();
+            if(java.lang.Math.sqrt(b)%2==0){
+                c++;
+            }
+            a++;
+        }
+        System.out.println("Kwadratami liczby parzystej: "+ c);
+    }
+}
+
+-------------(d)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+    public static void main(String[] args) {
+        int c = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double tab[] = new double[number+1];
+        for (int i = 1; i <= number; i++) {
+            tab[i] = scanner.nextDouble();
+        }
+        for(int i=1; i<=number;i++){
+            if(1<i && i<number){
+                if(tab[i]<((tab[i-1]+tab[i+1])/2)){
+                    c++;
+                }
+            }
+        }
+
+        System.out.println("Spełniają dany warunek: "+ c);
+    }
+}
+
+
+-------------(e)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static int silnia (int n) {
+        int iloczyn = 1;
+        for (int i=1; i<=n; i++) {
+            iloczyn *= i;
+        }
+        return iloczyn;
+    }
+
+    public static void main(String[] args) {
+        int c = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double tab[] = new double[number+1];
+        for (int i = 1; i <= number; i++) {
+            tab[i] = scanner.nextDouble();
+        }
+        for(int i=1; i<=number;i++){
+            if(1<i && i<number){
+                if(java.lang.Math.pow(2,i) < tab[i] && tab[i] < silnia(i)){
+                    c++;
+                }
+            }
+        }
+
+        System.out.println("Spełniają dany warunek: "+ c);
+    }
+}
+
+-------------(f)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        int b = 0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1){
+            double c = scanner.nextDouble();
+            if(a%2!=0 && c%2==0){
+                b++;
+            }
+            a++;
+        }
+
+        System.out.println("Spełniają dany warunek: "+ b);
+    }
+}
+
+-------------(g)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        int b = 0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1){
+            double c = scanner.nextDouble();
+            if(a%2!=0 && c>=0){
+                b++;
+            }
+            a++;
+        }
+
+        System.out.println("Spełniają dany warunek: "+ b);
+    }
+}
+
+-------------(h)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        int b = 0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1){
+            double c = scanner.nextDouble();
+            if(java.lang.Math.abs(c)<java.lang.Math.pow(a,2)){
+                b++;
+            }
+            a++;
+        }
+
+        System.out.println("Spełniają warunek |ak| < k^2: "+ b);
+    }
+}
+
+-------------(Zad2.2)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        double b = 0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1){
+            double c = scanner.nextDouble();
+            if(c>=0){
+                b = b + c;
+            }
+            a++;
+        }
+        b =2*b;
+
+        System.out.println("Wynik: "+ b);
+    }
+}
+
+-------------(Zad2.3)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        int b=0, d=0, e=0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1) {
+            double c = scanner.nextDouble();
+            if (c > 0) {
+                b++;
+            }
+            if (c < 0) {
+                d++;
+            }
+            if (c == 0) {
+                e++;
+            }
+            a++;
+        }
+        System.out.println("Zer: "+ e + "\nLiczb ujemnych: "+d + "\nLiczb dodatnich: "+b);
+    }
+}
+
+-------------(Zad2.4)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        double b=0, d=0;
+        int a = 1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        while(a!=number+1) {
+            double c = scanner.nextDouble();
+            if(a==1){
+                b = c;
+            }
+            if ( c > d) {
+                d = c;
+            }
+            if (c < b) {
+                b = c;
+            }
+
+            a++;
+        }
+        System.out.println("Największa liczba: " + d + "\nNajmniejsza liczba: " + b);
+    }
+}
+
+-------------(Zad2.5)---------------
+
+package com.company;
+
+import java.util.Scanner;
+
+public class zad2 {
+
+    public static void main(String[] args) {
+        int c = 0, d=0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double tab[] = new double[number+1];
+        for (int i = 1; i <= number; i++) {
+            tab[i] = scanner.nextDouble();
+        }
+        for(int i=1; i<=number-1; i++){
+            if(tab[i]>0 && tab[i+1]>0){
+                d++;
+            }
+        }
+        System.out.println("Wynik: " + d);
+    }
+}
