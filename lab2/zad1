@@ -1,4 +1,6 @@
-a)
+----------------(Zad1)------------------------------
+----------------(a)------------------------------
+
 package com.company;
 
 import java.util.Scanner;
@@ -20,7 +22,8 @@ class zad1 {
 
 }
 
-b)
+----------------(b)------------------------------
+
 package com.company;
 
 import java.util.Scanner;
@@ -42,7 +45,7 @@ class zad2 {
 
 }
 
-c)
+----------------(c)------------------------------
 
 package com.company;
 
@@ -66,7 +69,7 @@ class zad3 {
 }
 
 
-d)
+----------------(d)------------------------------
 
 package com.company;
 
@@ -90,7 +93,7 @@ class zad4 {
 }
 
 
-e)
+----------------(e)------------------------------
 
 package com.company;
 
@@ -114,7 +117,7 @@ class zad5 {
 }
 
 
-f)
+----------------(f)------------------------------
 
 package com.company;
 
@@ -137,7 +140,7 @@ class zad6 {
 
 }
 
-g)
+----------------(g)------------------------------
 
 package com.company;
 
@@ -165,7 +168,7 @@ class zad7 {
 }
 
 
-h)
+----------------(h)------------------------------
 
 ackage com.company;
 
@@ -198,7 +201,7 @@ class zad8 {
 
 }
 
-i)
+----------------(i)------------------------------
 
 package com.company;
 
@@ -239,4 +242,37 @@ class zad9 {
 
     }
 
+}
+
+----------------(Zad1.2)------------------------------
+
+package com.company;
+
+import java.util.Scanner;
+
+
+public class zad1 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbę naturalną: ");
+        int number = scanner.nextInt();
+        double tab[] = new double[number];
+        double tab2[] = new double[number];
+
+        for (int i = 0; i <= number - 1; i++) {
+            tab[i] = scanner.nextDouble();
+        }
+
+        double b = tab[0];
+
+        for (int i = 0; i <= number - 2; i++) {
+            tab2[i] = tab[i + 1];
+        }
+
+        tab2[number - 1] = b;
+        for (int i = 0; i <= number - 1; i++) {
+            System.out.println(tab2[i]);
+        }
+    }
 }
