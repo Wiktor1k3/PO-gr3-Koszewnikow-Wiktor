@@ -1,0 +1,34 @@
+package pl.imiaj.koszewnikow;
+
+public class TestNazwanyPunkt {
+
+    public static void main(String[] args) {
+
+        NazwanyPunkt a = new NazwanyPunkt(3, 5, "pkt1");
+        a.show();
+        Punkt b = new Punkt(3, 6);
+        b.show();
+        Punkt c = new NazwanyPunkt(3, 6, "pkt2");
+        c.show();
+        
+        Osoba o = new Osoba("Malek", 2001);
+        Student s = new Student("Nowacki", 1999, "Informatyka");
+        Nauczyciel n = new Nauczyciel("Nowak", 1980, 0);
+
+        System.out.println(o.getNazwisko());
+        System.out.println(o.getRokUrodzenia());
+        System.out.println(o);
+        System.out.println(s.getNazwisko());
+        System.out.println(s.getRokUrodzenia());
+        System.out.println(s.getKierunek());
+        System.out.println(s);
+        System.out.println(n.getNazwisko());
+        System.out.println(n.getRokUrodzenia());
+        System.out.println(n.getPensja());
+        System.out.println(n);
+
+        BetterRectangle br = new BetterRectangle(0, 0, 10, 20);
+        System.out.println(br.getPerimeter());
+        System.out.println(br.getArea());
+    }
+}
