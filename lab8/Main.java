@@ -6,16 +6,14 @@ import pl.imiaj.koszewnikow.Instruments.Instrument;
 import pl.imiaj.koszewnikow.Instruments.Skrzypce;
 
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
 
 
-        ArrayList<Instrument> orkiestra = new ArrayList<Instrument>();
+        ArrayList<Instrument> orkiestra = new ArrayList<>();
         orkiestra.add(new Fortepian("Michał", LocalDate.now()));
         orkiestra.add(new Flet("Andrzej", LocalDate.now()));
         orkiestra.add(new Skrzypce("Patryk", LocalDate.now()));
