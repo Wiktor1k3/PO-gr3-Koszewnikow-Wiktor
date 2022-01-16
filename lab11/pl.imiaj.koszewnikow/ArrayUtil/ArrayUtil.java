@@ -10,7 +10,7 @@ public class ArrayUtil<T> {
 
         for(int i = 0; i <= ar.size()-2; i++){
             if(ar.get(i).compareTo(ar.get(i+1)) > 0) {
-                System.out.println("Posortowana niemalejaco");
+                System.out.println("Nie jest posortowana niemalejaco");
                 return;
             }
         }
