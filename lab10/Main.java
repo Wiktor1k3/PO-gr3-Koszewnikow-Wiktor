@@ -21,7 +21,7 @@ public class Main {
 
         Osoba o1 = new Osoba("Kowalski", ld1);
         Osoba o2 = new Osoba("Kor", ld2);
-        Osoba o3 = new Osoba("Machulski", ld3);
+        Osoba o3 = new Osoba("Nowak", ld3);
         Osoba o4 = new Osoba("Nowak", ld2);
         Osoba o5 = new Osoba("Jaworski", ld1);
 
@@ -33,15 +33,15 @@ public class Main {
         lista.add(o5);
 
         System.out.println(lista);
-//        lista.sort(Comparator.naturalOrder());
-//        System.out.println(lista);
-//        System.out.println(o.equals(oo));
-//        System.out.println(o.compareTo(oo));
-//        System.out.println(o);
+        lista.sort(Comparator.naturalOrder());
+        System.out.println(lista);
+        System.out.println(o1.equals(o2));
+        System.out.println(o1.compareTo(o3));
+        System.out.println(o1);
 
-//        String one = "jeden";
-//        String dwa = "dwa";
-//        System.out.println(dwa.compareTo(one));
+        String one = "jeden";
+        String dwa = "dwa";
+        System.out.println(dwa.compareTo(one));
 
     }
 
